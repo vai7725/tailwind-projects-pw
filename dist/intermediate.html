@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Intermediate | Tailwind project</title>
+  </head>
+  <body>
+    <section class="h-screen flex">
+      <img
+        class="hidden lg:block aspect-square"
+        src="https://images.pexels.com/photos/17364174/pexels-photo-17364174/free-photo-of-wood-light-nature-love.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <div
+        class="flex flex-col justify-center items-center border w-full lg:w-1/2"
+      >
+        <div class="w-[50%] text-xl font-bold text-center lg:text-left">
+          <span class="text-green-600">&#9650;</span>
+          <span>FarMan</span>
+        </div>
+        <div class="w-[50%] text-3xl mt-10 font-bold text-center lg:text-left">
+          <h2>Hello,</h2>
+          <h2>Welcome Back</h2>
+        </div>
+
+        <!-- login form  -->
+        <form action="" class="mt-8 w-[80%] lg:w-[50%] space-y-4 mx-auto">
+          <h4>Login to manage your account</h4>
+          <input
+            type="email"
+            class="border w-full px-5 py-2"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            class="border w-full px-5 py-2"
+            placeholder="Password"
+          />
+          <div
+            class="w-full mt-2 text-blue-600 hover:text-blue-500 cursor-pointer"
+          >
+            Forgot your password
+          </div>
+          <button
+            class="w-full mt-2 bg-green-600 py-2 rounded text-white font-bold hover:bg-green-500"
+          >
+            Login
+          </button>
+          <div
+            class="flex justify-center items-center flex-col text-center space-y-4 mt-4"
+          >
+            <span>or</span>
+            <div class="flex gap-8 justify-content item-center">
+              <i class="fa-brands fa-facebook text-2xl cursor-pointer"></i>
+              <i class="fa-brands fa-google text-2xl cursor-pointer"></i>
+              <i class="fa-brands fa-instagram text-2xl cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="mt-4 text-sm text-center">
+            Don't have an account?
+            <span class="text-blue-600 hover:text-blue-400 cursor-pointer"
+              >Sign up</span
+            >
+          </div>
+        </form>
+      </div>
+      <div></div>
+    </section>
+  </body>
+</html>
